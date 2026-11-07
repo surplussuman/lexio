@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+*.egg-info/
+
+tests/
+
+# Django
+backend/media/
+backend/staticfiles/
+db.sqlite3
+
+# Env
+.env
+!.env.example
+
+# Node
+node_modules/
+dist/
+frontend/test-results/
+frontend/playwright-report/
+frontend/blob-report/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+
+
+design_extracted/

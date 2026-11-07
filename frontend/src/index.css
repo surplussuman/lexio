@@ -1,0 +1,18 @@
+@import "./styles/tokens.css";
+
+/* Selecting/copying page content is off everywhere — an assessment prompt or
+   a peer's line shouldn't be a one-drag trip into another tab. Actual form
+   controls are the deliberate exception: a student still needs to select
+   what they've typed to edit it. The `copy`/`cut` event block that makes
+   this actually hold (not just discourage) lives in App.jsx. */
+body {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input,
+textarea,
+[contenteditable='true'] {
+  -webkit-user-select: text;
+  user-select: text;
+}
